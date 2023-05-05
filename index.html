@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Magazin de produse electronice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap&_v=20230505080727" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230505080727">
+</head>
+<body>
+<div class="wrapper">
+    <div class="m-menu">
+        <div class="m-menu__header">
+            <a href="/" class="header__logo">
+                <svg width="62" height="62" stroke="#111418">
+                    <use xlink:href="./img/icons/icons.svg#logo"></use>
+                </svg>
+            </a>
+
+            <div class="m-menu__close">
+                <svg width="20" height="20" fill="#111418">
+                    <use xlink:href="./img/icons/icons.svg#close"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="header__logo">
+                    <svg width="96" height="96" stroke="#fff">
+                        <use xlink:href="./img/icons/icons.svg#logo"></use>
+                    </svg>
+                </a>
+                <nav class="header__nav">
+                    <a href="#">Home</a>
+                    <a href="#">Despre noi</a>
+                    <a href="#">Produse</a>
+                    <a href="#">Noutati</a>
+                    <a href="#">Contacte</a>
+                </nav>
+                <div class="header__buttons">
+                    <div class="search-wrap">
+                        <button class="search-button">
+                            <svg width="20" height="20" stroke="#fff">
+                                <use xlink:href="./img/icons/icons.svg#search"></use>
+                            </svg>
+                        </button>
+                        <form class="search-form-wrap" onsubmit="return false">
+                            <div class="search-form">
+                                <div class="search-form__title">Căutare rapidă pe site</div>
+                                <div class="search-form__inner">
+                                    <input type="text" class="form-control">
+                                    <button>
+                                        <svg width="30" height="30" stroke="#111418">
+                                            <use xlink:href="./img/icons/icons.svg#search"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="search-form__results">Rezultatele căutării</div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="cart">
+                        <button class="cart__button">
+                            <svg width="20" height="20" stroke="#fff">
+                                <use xlink:href="./img/icons/icons.svg#shopping-bag"></use>
+                            </svg>
+                            <span class="count">2</span>
+                        </button>
+                        <div class="cart-popup">
+                            <div class="cart-popup__inner">
+                                <div class="cart-popup__title">
+                                    Coş
+                                    <button class="cart-popup__close">
+                                        <svg width="20" height="20" fill="#fff">
+                                            <use xlink:href="./img/icons/icons.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="cart-popup__products">
+                                    <div class="cart-popup__product">
+                                        <a href="#" class="img">
+                                            <picture><source srcset="img/products/product-1.webp" type="image/webp"><img src="img/products/product-1.png" alt=""></picture>
+                                        </a>
+                                        <div class="info">
+                                            <div class="info__left">
+                                                <a href="#" class="title">Apple iPhone 12 Mini</a>
+                                                <div class="price">21 999 lei</div>
+                                            </div>
+                                            <div class="info__right">
+                                                <div class="qty">Cant: 2</div>
+                                                <div class="total-price">43 998 lei</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cart-popup__product">
+                                        <a href="#" class="img">
+                                            <picture><source srcset="img/products/product-2.webp" type="image/webp"><img src="img/products/product-2.png" alt=""></picture>
+                                        </a>
+                                        <div class="info">
+                                            <div class="info__left">
+                                                <a href="#" class="title">Apple iPhone 12 Mini</a>
+                                                <div class="price">21 999 lei</div>
+                                            </div>
+                                            <div class="info__right">
+                                                <div class="qty">Cant: 3</div>
+                                                <div class="total-price">65 997 lei</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cart-popup__footer">
+                                    <div class="cart-popup__total">
+                                        <div class="text">Total:</div>
+                                        <div class="value">109 995 lei</div>
+                                    </div>
+                                    <button class="button button-primary">Du-te la coș</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="m-menu__btn">
+                        <svg width="20" height="20" fill="#fff">
+                            <use xlink:href="./img/icons/icons.svg#hamburger"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="main-banner">
+            <div class="container">
+                <div class="main-banner__list swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="main-banner__item">
+                                <div class="main-banner__content">
+                                    <div class="h1">
+                                        <span>Online Magazin</span>
+                                        de produse electronice
+                                    </div>
+
+                                    <div class="wrap-accent">
+                                        <div class="accent">
+                                            <svg width="20" height="20" stroke="#fff">
+                                                <use xlink:href="./img/icons/icons.svg#map-pin"></use>
+                                            </svg>
+                                            în Moldova
+                                        </div>
+                                    </div>
+
+                                    <div class="scroll-down animate__shakeY">
+                                        <svg width="20" height="20" stroke="#fff">
+                                            <use xlink:href="./img/icons/icons.svg#mouse"></use>
+                                        </svg>
+                                        Deruleaza in jos
+                                    </div>
+                                </div>
+
+                                <div class="main-banner__product">
+                                    <picture><source srcset="img/iphone-12-mini-1.5x.webp" type="image/webp"><img src="img/iphone-12-mini-1.5x.png" alt=""></picture>
+                                    <div class="characteristics">
+                                        <div class="title">Apple iPhone 12 Mini</div>
+                                        <div class="list">
+                                            <div class="item">
+                                                <div class="item__title">Display</div>
+                                                <div class="item__value">6.1" OLED</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item__title">Refresh rate</div>
+                                                <div class="item__value">120 Hz</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item__title">Memorie internă</div>
+                                                <div class="item__value">128 GB</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item__title">RAM</div>
+                                                <div class="item__value">6 GB</div>
+                                            </div>
+                                        </div>
+                                        <div class="buttons">
+                                            <button class="button button-primary">
+                                                <svg class="icon-left" width="20" height="20" stroke="#fff">
+                                                    <use xlink:href="./img/icons/icons.svg#shopping-bag"></use>
+                                                </svg>
+                                                Cumpără acum
+                                            </button>
+                                            <button class="button button-transparent">
+                                                Află mai multe
+                                                <svg class="icon-right arrow-move" width="20" height="20" stroke="#fff">
+                                                    <use xlink:href="./img/icons/icons.svg#arrow-right"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-banner__item">
+                                <div class="main-banner__content">
+                                    <h1 class="h1">
+                                        <span>Online Magazin</span>
+                                        de produse electronice
+                                    </h1>
+
+                                    <div class="wrap-accent">
+                                        <div class="accent">
+                                            <svg width="20" height="20" stroke="#fff">
+                                                <use xlink:href="./img/icons/icons.svg#map-pin"></use>
+                                            </svg>
+                                            în Moldova
+                                        </div>
+                                    </div>
+
+                                    <div class="scroll-down animate__shakeY">
+                                        <svg width="20" height="20" stroke="#fff">
+                                            <use xlink:href="./img/icons/icons.svg#mouse"></use>
+                                        </svg>
+                                        Deruleaza in jos
+                                    </div>
+                                </div>
+
+                                <div class="main-banner__product">
+                                    <picture><source srcset="img/google-pixel-4a.webp" type="image/webp"><img src="img/google-pixel-4a.png" alt=""></picture>
+                                    <div class="characteristics">
+                                        <div class="title">Google Pixel 4A</div>
+                                        <div class="list">
+                                            <div class="item">
+                                                <div class="item__title">Display</div>
+                                                <div class="item__value">8.1" OLED</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item__title">Refresh rate</div>
+                                                <div class="item__value">140 Hz</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item__title">Memorie internă</div>
+                                                <div class="item__value">128 GB</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item__title">RAM</div>
+                                                <div class="item__value">8 GB</div>
+                                            </div>
+                                        </div>
+                                        <div class="buttons">
+                                            <button class="button button-primary">
+                                                <svg class="icon-left" width="20" height="20" stroke="#fff">
+                                                    <use xlink:href="./img/icons/icons.svg#shopping-bag"></use>
+                                                </svg>
+                                                Cumpără acum
+                                            </button>
+                                            <button class="button button-transparent">
+                                                Află mai multe
+                                                <svg class="icon-right arrow-move" width="20" height="20" stroke="#fff">
+                                                    <use xlink:href="./img/icons/icons.svg#arrow-right"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-banner__item">
+                                <div class="main-banner__content">
+                                    <div class="h1">
+                                        <span>Online Magazin</span>
+                                        de produse electronice
+                                    </div>
+
+                                    <div class="wrap-accent">
+                                        <div class="accent">
+                                            <svg width="20" height="20" stroke="#fff">
+                                                <use xlink:href="./img/icons/icons.svg#map-pin"></use>
+                                            </svg>
+                                            în Moldova
+                                        </div>
+                                    </div>
+
+                                    <div class="scroll-down animate__shakeY">
+                                        <svg width="20" height="20" stroke="#fff">
+                                            <use xlink:href="./img/icons/icons.svg#mouse"></use>
+                                        </svg>
+                                        Deruleaza in jos
+                                    </div>
+                                </div>
+
+                                <div class="main-banner__product">
+                                    <picture><source srcset="img/one-plus-8-pro.webp" type="image/webp"><img src="img/one-plus-8-pro.png" alt=""></picture>
+                                    <div class="characteristics">
+                                        <div class="title">OnePlus 8 Pro</div>
+                                        <div class="list">
+                                            <div class="item">
+                                                <div class="item__title">Display</div>
+                                                <div class="item__value">5.1" OLED</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item__title">Refresh rate</div>
+                                                <div class="item__value">80 Hz</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item__title">Memorie internă</div>
+                                                <div class="item__value">64 GB</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item__title">RAM</div>
+                                                <div class="item__value">4 GB</div>
+                                            </div>
+                                        </div>
+                                        <div class="buttons">
+                                            <button class="button button-primary">
+                                                <svg class="icon-left" width="20" height="20" stroke="#fff">
+                                                    <use xlink:href="./img/icons/icons.svg#shopping-bag"></use>
+                                                </svg>
+                                                Cumpără acum
+                                            </button>
+                                            <button class="button button-transparent">
+                                                Află mai multe
+                                                <svg class="icon-right arrow-move" width="20" height="20" stroke="#fff">
+                                                    <use xlink:href="./img/icons/icons.svg#arrow-right"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-banner__item">
+                                <div class="main-banner__content">
+                                    <div class="h1">
+                                        <span>Online Magazin</span>
+                                        de produse electronice
+                                    </div>
+
+                                    <div class="wrap-accent">
+                                        <div class="accent">
+                                            <svg width="20" height="20" stroke="#fff">
+                                                <use xlink:href="./img/icons/icons.svg#map-pin"></use>
+                                            </svg>
+                                            în Moldova
+                                        </div>
+                                    </div>
+
+                                    <div class="scroll-down animate__shakeY">
+                                        <svg width="20" height="20" stroke="#fff">
+                                            <use xlink:href="./img/icons/icons.svg#mouse"></use>
+                                        </svg>
+                                        Deruleaza in jos
+                                    </div>
+                                </div>
+
+                                <div class="main-banner__product">
+                                    <picture><source srcset="img/samsung-galaxy-a50.webp" type="image/webp"><img src="img/samsung-galaxy-a50.png" alt=""></picture>
+                                    <div class="characteristics">
+                                        <div class="title">Samsung Galaxy A50</div>
+                                        <div class="list">
+                                            <div class="item">
+                                                <div class="item__title">Display</div>
+                                                <div class="item__value">5.5" OLED</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item__title">Refresh rate</div>
+                                                <div class="item__value">100 Hz</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item__title">Memorie internă</div>
+                                                <div class="item__value">84 GB</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="item__title">RAM</div>
+                                                <div class="item__value">7 GB</div>
+                                            </div>
+                                        </div>
+                                        <div class="buttons">
+                                            <button class="button button-primary">
+                                                <svg class="icon-left" width="20" height="20" stroke="#fff">
+                                                    <use xlink:href="./img/icons/icons.svg#shopping-bag"></use>
+                                                </svg>
+                                                Cumpără acum
+                                            </button>
+                                            <button class="button button-transparent">
+                                                Află mai multe
+                                                <svg class="icon-right arrow-move" width="20" height="20" stroke="#fff">
+                                                    <use xlink:href="./img/icons/icons.svg#arrow-right"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-pagination">
+                        <div id="current-slide" class="current-slide">01</div>
+                        <div class="swiper-pagination"></div>
+                        <div id="total-slides" class="total-slide"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recommended-products section-products-slider">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-title">Produse<br> Recomandate</div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="wrap-products-slider">
+                    <div class="products-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="product swiper-slide">
+                                <a href="#" class="product__img">
+                                    <picture><source srcset="img/products/product-1.webp" type="image/webp"><img src="img/products/product-1.png" alt=""></picture>
+                                </a>
+                                <h3 class="product__title">
+                                    <a href="#">Apple iPhone 12 Mini</a>
+                                </h3>
+                                <div class="product__description">4 ГБ/ 256 ГБ Midnight</div>
+                                <div class="product__footer">
+                                    <div class="product__wrap-price">
+                                        <div class="product__old-price">23499 lei</div>
+                                        <div class="product__price">21 999 lei</div>
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="20" height="20" stroke="#fff">
+                                            <use xlink:href="./img/icons/icons.svg#shopping-bag"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide">
+                                <a href="#" class="product__img">
+                                    <picture><source srcset="img/products/product-2.webp" type="image/webp"><img src="img/products/product-2.png" alt=""></picture>
+                                </a>
+                                <h3 class="product__title">
+                                    <a href="#">Google Pixel 4A</a>
+                                </h3>
+                                <div class="product__description">4 ГБ/ 256 ГБ Midnight</div>
+                                <div class="product__footer">
+                                    <div class="product__wrap-price">
+                                        <div class="product__old-price">23499 lei</div>
+                                        <div class="product__price">21 999 lei</div>
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="20" height="20" stroke="#fff">
+                                            <use xlink:href="./img/icons/icons.svg#shopping-bag"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide">
+                                <a href="#" class="product__img">
+                                    <picture><source srcset="img/products/product-3.webp" type="image/webp"><img src="img/products/product-3.png" alt=""></picture>
+                                </a>
+                                <h3 class="product__title">
+                                    <a href="#">OnePlus 8 Pro</a>
+                                </h3>
+                                <div class="product__description">4 ГБ/ 256 ГБ Midnight</div>
+                                <div class="product__footer">
+                                    <div class="product__wrap-price">
+                                        <div class="product__old-price">23499 lei</div>
+                                        <div class="product__price">21 999 lei</div>
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="20" height="20" stroke="#fff">
+                                            <use xlink:href="./img/icons/icons.svg#shopping-bag"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide">
+                                <div class="product__best-price">Best Price</div>
+                                <a href="#" class="product__img">
+                                    <picture><source srcset="img/products/product-4.webp" type="image/webp"><img src="img/products/product-4.png" alt=""></picture>
+                                </a>
+                                <h3 class="product__title">
+                                    <a href="#">Samsung Galaxy A50</a>
+                                </h3>
+                                <div class="product__description">4 ГБ/ 256 ГБ Midnight</div>
+                                <div class="product__footer">
+                                    <div class="product__wrap-price">
+                                        <div class="product__old-price">23499 lei</div>
+                                        <div class="product__price">21 999 lei</div>
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="20" height="20" stroke="#fff">
+                                            <use xlink:href="./img/icons/icons.svg#shopping-bag"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="product swiper-slide">
+                                <a href="#" class="product__img">
+                                    <picture><source srcset="img/products/product-1.webp" type="image/webp"><img src="img/products/product-1.png" alt=""></picture>
+                                </a>
+                                <h3 class="product__title">
+                                    <a href="#">Apple iPhone 12 Mini</a>
+                                </h3>
+                                <div class="product__description">4 ГБ/ 256 ГБ Midnight</div>
+                                <div class="product__footer">
+                                    <div class="product__wrap-price">
+                                        <div class="product__old-price">23499 lei</div>
+                                        <div class="product__price">21 999 lei</div>
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="20" height="20" stroke="#fff">
+                                            <use xlink:href="./img/icons/icons.svg#shopping-bag"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide">
+                                <a href="#" class="product__img">
+                                    <picture><source srcset="img/products/product-2.webp" type="image/webp"><img src="img/products/product-2.png" alt=""></picture>
+                                </a>
+                                <h3 class="product__title">
+                                    <a href="#">Google Pixel 4A</a>
+                                </h3>
+                                <div class="product__description">4 ГБ/ 256 ГБ Midnight</div>
+                                <div class="product__footer">
+                                    <div class="product__wrap-price">
+                                        <div class="product__old-price">23499 lei</div>
+                                        <div class="product__price">21 999 lei</div>
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="20" height="20" stroke="#fff">
+                                            <use xlink:href="./img/icons/icons.svg#shopping-bag"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product swiper-slide">
+                                <a href="#" class="product__img">
+                                    <picture><source srcset="img/products/product-3.webp" type="image/webp"><img src="img/products/product-3.png" alt=""></picture>
+                                </a>
+                                <h3 class="product__title">
+                                    <a href="#">OnePlus 8 Pro</a>
+                                </h3>
+                                <div class="product__description">4 ГБ/ 256 ГБ Midnight</div>
+                                <div class="product__footer">
+                                    <div class="product__wrap-price">
+                                        <div class="product__old-price">23499 lei</div>
+                                        <div class="product__price">21 999 lei</div>
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="20" height="20" stroke="#fff">
+                                            <use xlink:href="./img/icons/icons.svg#shopping-bag"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button swiper-button-prev">
+                        <svg width="20" height="20" stroke="#fff">
+                            <use xlink:href="./img/icons/icons.svg#chevron-left"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-button swiper-button-next">
+                        <svg width="20" height="20" stroke="#fff">
+                            <use xlink:href="./img/icons/icons.svg#chevron-right"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages__inner">
+                    <div class="advantages__item">
+                        <div class="advantages__head">
+                            <div class="advantages__title">Până la 2 ani<br> de garanție</div>
+                            <div class="advantages__img">
+                                <svg width="20" height="20" stroke="#fff">
+                                    <use xlink:href="./img/icons/icons.svg#shield"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="advantages__description">Lucrul meșterului e gratuit, piesele sunt gratuite.</div>
+                    </div>
+
+                    <div class="advantages__item">
+                        <div class="advantages__head">
+                            <div class="advantages__title">Livrare gratuită în Chișinău</div>
+                            <div class="advantages__img">
+                                <svg width="20" height="20" stroke="#fff">
+                                    <use xlink:href="./img/icons/icons.svg#truck"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="advantages__description">Îți livrăm comanda oriunde<br> în raza Chișinăului, de la 3
+                            ore.
+                        </div>
+                    </div>
+
+                    <div class="advantages__item">
+                        <div class="advantages__head">
+                            <div class="advantages__title">Cele mai bune preturi</div>
+                            <div class="advantages__img">
+                                <svg width="20" height="20" stroke="#fff">
+                                    <use xlink:href="./img/icons/icons.svg#tag"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="advantages__description">Marfuri de la furnizori la preturi mici</div>
+                    </div>
+
+                    <div class="advantages__item">
+                        <div class="advantages__head">
+                            <div class="advantages__title">Calitate<br> de neegalat</div>
+                            <div class="advantages__img">
+                                <svg width="20" height="20" stroke="#fff">
+                                    <use xlink:href="./img/icons/icons.svg#award"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="advantages__description">Fiecare produs este supus controlului de calitate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrap-articles">
+            <div class="container">
+                <div class="wrap-articles-subscribe">
+                    <div class="articles">
+                        <div class="articles__inner">
+                            <div class="article__item">
+                                <a href="#" class="article__img">
+                                    <picture><source srcset="img/articles/article-1.webp" type="image/webp"><img src="img/articles/article-1.png" alt=""></picture>
+                                </a>
+                                <div class="article__body">
+                                    <div class="article__date">24 Jul 2022</div>
+                                    <h3 class="article__title">
+                                        <a href="#">Diam venenatis amet molestie vestibulum vitae id ut lacinia eu.</a>
+                                    </h3>
+                                    <div class="article__description">
+                                        Nunc justo, eget condimentum in pulvinar nibh. Tempus ipsum sapien sit pulvinar
+                                        habitasse
+                                        sagittis, consectetur.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="article__item">
+                                <a href="#" class="article__img">
+                                    <picture><source srcset="img/articles/article-2.webp" type="image/webp"><img src="img/articles/article-2.png" alt=""></picture>
+                                </a>
+                                <div class="article__body">
+                                    <div class="article__date">24 Jul 2022</div>
+                                    <h3 class="article__title">
+                                        <a href="#">Malesuada neque, donec cursus ac vel phasellus vestibulum.</a>
+                                    </h3>
+                                    <div class="article__description">
+                                        Pharetra, lectus quisque sit sed fringilla dui libero. Magna eu ut feugiat vitae
+                                        mauris
+                                        non.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="article__item">
+                                <a href="#" class="article__img">
+                                    <picture><source srcset="img/articles/article-3.webp" type="image/webp"><img src="img/articles/article-3.png" alt=""></picture>
+                                </a>
+                                <div class="article__body">
+                                    <div class="article__date">24 Jul 2022</div>
+                                    <h3 class="article__title">
+                                        <a href="#">Egestas pharetra, fames est adipiscing.</a>
+                                    </h3>
+                                    <div class="article__description">
+                                        Aliquam ultrices nisl pharetra a ac eros. Molestie leo, cras in faucibus nisl,
+                                        lacus
+                                        sed.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="article__item">
+                                <a href="#" class="article__img">
+                                    <picture><source srcset="img/articles/article-1.webp" type="image/webp"><img src="img/articles/article-1.png" alt=""></picture>
+                                </a>
+                                <div class="article__body">
+                                    <div class="article__date">24 Jul 2022</div>
+                                    <h3 class="article__title">
+                                        <a href="#">Diam venenatis amet molestie vestibulum vitae id ut lacinia eu.</a>
+                                    </h3>
+                                    <div class="article__description">
+                                        Nunc justo, eget condimentum in pulvinar nibh. Tempus ipsum sapien sit pulvinar
+                                        habitasse
+                                        sagittis, consectetur.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="article__item">
+                                <a href="#" class="article__img">
+                                    <picture><source srcset="img/articles/article-2.webp" type="image/webp"><img src="img/articles/article-2.png" alt=""></picture>
+                                </a>
+                                <div class="article__body">
+                                    <div class="article__date">24 Jul 2022</div>
+                                    <h3 class="article__title">
+                                        <a href="#">Malesuada neque, donec cursus ac vel phasellus vestibulum.</a>
+                                    </h3>
+                                    <div class="article__description">
+                                        Pharetra, lectus quisque sit sed fringilla dui libero. Magna eu ut feugiat vitae
+                                        mauris
+                                        non.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="article__item">
+                                <a href="#" class="article__img">
+                                    <picture><source srcset="img/articles/article-3.webp" type="image/webp"><img src="img/articles/article-3.png" alt=""></picture>
+                                </a>
+                                <div class="article__body">
+                                    <div class="article__date">24 Jul 2022</div>
+                                    <h3 class="article__title">
+                                        <a href="#">Egestas pharetra, fames est adipiscing.</a>
+                                    </h3>
+                                    <div class="article__description">
+                                        Aliquam ultrices nisl pharetra a ac eros. Molestie leo, cras in faucibus nisl,
+                                        lacus
+                                        sed.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles__show-more-wrap">
+                            <button id="show-more" class="button button-transparent">Afișați mai multe</button>
+                        </div>
+                    </div>
+                    <div class="subscribe">
+                        <div class="subscribe__arrow">
+                            <svg width="100" height="84">
+                                <use xlink:href="./img/icons/icons.svg#subscribe-arrow"></use>
+                            </svg>
+                        </div>
+
+                        <div class="h2 subscribe__title">Aboneaza-te la newsletter-ul nostru</div>
+                        <div class="subscribe__text">Doar cele mai utile știri.</div>
+
+                        <form class="subscribe__form" onsubmit="return false">
+                            <div class="form-group">
+                                <input type="email" class="form-input" placeholder="E-mail" required>
+                            </div>
+                            <button class="button button-primary">
+                                <svg class="icon-left" width="20" height="20" stroke="#fff">
+                                    <use xlink:href="./img/icons/icons.svg#send"></use>
+                                </svg>
+                                Abonati-va
+                            </button>
+                        </form>
+
+                        <div class="subscribe__bottom-text">
+                            Acest site este protejat de reCAPTCHA<br>
+                            și se aplică Politica de confidențialitate<br>
+                            și Termenii și condițiile Google.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <a href="/" class="footer__logo">
+                        <svg width="72" height="72" stroke="#fff">
+                            <use xlink:href="./img/icons/icons.svg#logo"></use>
+                        </svg>
+                    </a>
+
+                    <div class="footer__socials">
+                        <a href="#" target="_blank">
+                            <svg width="20" height="20" stroke="#fff">
+                                <use xlink:href="./img/icons/icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg width="20" height="20" stroke="#fff">
+                                <use xlink:href="./img/icons/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg width="20" height="20" stroke="#fff">
+                                <use xlink:href="./img/icons/icons.svg#youtube"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__nav">
+                    <ul>
+                        <li>
+                            <a href="#">Despre noi</a>
+                        </li>
+                        <li>
+                            <a href="#">Produse</a>
+                        </li>
+                        <li>
+                            <a href="#">Noutati</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacte</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">Garanție si servicii</a>
+                        </li>
+                        <li>
+                            <a href="#">Politica de confidențialitate</a>
+                        </li>
+                        <li>
+                            <a href="#">Protecția consumatorilor</a>
+                        </li>
+                        <li>
+                            <a href="#">Cookies</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__right">
+                    <div class="copyright">© PC Store, 2022</div>
+                    <div class="payments">
+                        <picture><source srcset="img/visa.webp" type="image/webp"><img src="img/visa.png" width="67" height="20" alt=""></picture>
+                        <picture><source srcset="img/mastercard.webp" type="image/webp"><img src="img/mastercard.png" width="33" height="20" alt=""></picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/app.min.js?_v=20230505080727"></script>
+</body>
+</html>
